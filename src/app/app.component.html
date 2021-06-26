@@ -53,4 +53,18 @@
     <img class="home-made__bg" src="/assets/images/home-made.png" />
     <div class="home-made__msg">HOME MADE AND FRESH</div>
   </div>
+  <div class="contact-message">
+    <div class="contact-message__msg">
+      <fa-icon [icon]="faPhoneAlt"></fa-icon>
+      Call/Text us at
+      <a class="contact-message__msg--number" href="tel:{{ number }}">{{
+        number
+      }}</a>
+    </div>
+  </div>
 </main>
+<footer class="footer">
+  <a href="/" class="footer--link">Home</a>
+  <img class="footer__logo" src="/assets/images/logo.svg" />
+  <a href="/menu" class="footer--link">Menu</a>
+</footer>

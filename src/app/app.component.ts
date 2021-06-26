@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   number = '+1-647-207-2216';
+  faPhoneAlt = faPhoneAlt;
 }

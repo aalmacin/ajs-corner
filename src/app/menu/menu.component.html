@@ -1,0 +1,45 @@
+<header class="main-header">
+  <h1 class="main-header__logo">
+    <img
+      class="main-header__logo--img"
+      alt="AJ's Menu"
+      src="/assets/images/logo.svg"
+    />
+  </h1>
+  <nav class="main-header__nav">
+    <a routerLink="/home" class="main-header__nav--link">Home</a>
+    <a routerLink="/menu" class="main-header__nav--link">Menu</a>
+  </nav>
+</header>
+<h2 class="our-menu">Our Menu</h2>
+<div class="place-order">
+  To place your order, call/text us at
+  <a class="place-order__number" href="tel:{{ number }}">{{ number }}</a>
+</div>
+<app-menu-item
+  product="Lechon Baboy"
+  price="$15 / lbs"
+  details="Roasted pork and sauce"
+  imgSrc="/assets/images/lechon.png"
+></app-menu-item>
+<app-menu-item
+  product="Gimbap"
+  price="$5 per 7pcs"
+  details="Seafood and veggies wrapped in seaweed"
+  imgSrc="/assets/images/gimbap.png"
+  [right]="true"
+></app-menu-item>
+<app-menu-item
+  product="Sushi Bake"
+  price="$12 - solo / $25 - medium / $35 - large"
+  details="Similar in taste to your traditional sushi  with a twist"
+  imgSrc="/assets/images/sushi-bake.png"
+></app-menu-item>
+<app-menu-item
+  product="Ube Roll Cake"
+  price="$35"
+  details="Great home made dessert and snack"
+  imgSrc="/assets/images/ube-roll-cake.png"
+  [right]="true"
+></app-menu-item>
+<app-footer></app-footer>

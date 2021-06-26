@@ -1,0 +1,46 @@
+$orange: #ff8b2c;
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+  background: #f2f2f2;
+
+  &__logo {
+    width: 40rem;
+  }
+
+  &__nav {
+    display: flex;
+
+    &--link:not(:last-child) {
+      margin-right: 10rem;
+    }
+
+    &--link,
+    &--link:visited {
+      font-family: Montserrat;
+      font-size: 7rem;
+      text-decoration-line: underline;
+
+      color: #513c2d;
+    }
+  }
+}
+
+.our-menu {
+  font-family: Nunito;
+  font-size: 18rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+
+.place-order {
+  text-align: center;
+
+  &__number {
+    color: $orange;
+  }
+}

@@ -1,0 +1,12 @@
+<div
+  class="menu-item"
+  [class.menu-item-left]="!right"
+  [class.menu-item-right]="right"
+>
+  <img class="menu-item__image" src="{{ imgSrc }}" alt="" />
+  <div class="menu-item__info">
+    <h3 class="menu-item__info--product">{{ product }}</h3>
+    <div class="menu-item__info--price">{{ price }}</div>
+    <p class="menu-item__info--details">{{ details }}</p>
+  </div>
+</div>

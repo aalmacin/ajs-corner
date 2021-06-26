@@ -1,0 +1,67 @@
+<header>
+  <div class="main-banner">
+    <div class="main-header">
+      <h1 class="main-header__logo">
+        <img
+          class="main-header__logo--img"
+          alt="AJ's Menu"
+          src="/assets/images/logo-white-text.svg"
+        />
+      </h1>
+      <div class="main-header__contact">
+        Contact Us:
+        <a class="main-header__contact--number" href="tel:{{ number }}">{{
+          number
+        }}</a>
+      </div>
+      <nav class="main-header__nav">
+        <a routerLink="/home" class="main-header__nav--link">Home</a>
+        <a routerLink="/menu" class="main-header__nav--link">Menu</a>
+      </nav>
+    </div>
+    <img class="main-banner__bg" src="/assets/images/banner-image.png" />
+    <div class="main-banner__info">
+      <h2 class="main-banner__info--heading">
+        <span class="main-banner__info--heading-delicious">Delicious</span>
+        Asian Food
+      </h2>
+      <div class="main-banner__info--white-line"></div>
+      <div class="main-banner__info--parag">
+        Authentic Filipino, Korean and Japanese food
+      </div>
+      <a routerLink="/menu"
+        ><button class="main-banner__info--btn">Our Menu</button></a
+      >
+    </div>
+  </div>
+</header>
+<main>
+  <app-home-menu-item
+    flavorText="our specialty"
+    heading="Filipino Foods"
+    details="Lechon is a must have on all occasions. We make sure that you get the best lechon, not like the ones you get at an asian store. The good news is that you don’t need to wait for Christmas to enjoy it."
+    imgSrc="/assets/images/lechon.png"
+  ></app-home-menu-item>
+  <app-home-menu-item
+    flavorText="a different taste"
+    heading="Korean Foods"
+    details="If you are tired of the same food everyday, try out our authentic Korean recipes. Made by our South Korean partner. You can go mild or spicy, see food or kimchi. I can assure you will never regret it."
+    imgSrc="/assets/images/gimbap.png"
+    [right]="true"
+  ></app-home-menu-item>
+  <div class="home-made">
+    <img class="home-made__bg" src="/assets/images/home-made.png" />
+    <div class="home-made__msg">HOME MADE AND FRESH</div>
+  </div>
+  <div class="contact-message">
+    <div class="contact-message__msg">
+      <fa-icon [icon]="faPhoneAlt"></fa-icon>
+      Call/Text us at
+      <a class="contact-message__msg--number" href="tel:{{ number }}">{{
+        number
+      }}</a>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

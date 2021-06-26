@@ -106,3 +106,31 @@ $orange: #ff8b2c;
     }
   }
 }
+
+.home-made {
+  margin-top: 15rem;
+  position: relative;
+
+  &__bg {
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__msg {
+    font-family: Nunito;
+    font-size: 12rem;
+    text-align: center;
+    padding: 35rem 4rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 20rem 4rem;
+    }
+
+    color: #ffffff;
+  }
+}

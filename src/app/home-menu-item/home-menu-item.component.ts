@@ -10,6 +10,7 @@ export class HomeMenuItemComponent implements OnInit {
   @Input() heading!: string;
   @Input() details!: string;
   @Input() imgSrc!: string;
+  @Input() right? = false;
 
   constructor() {}
 

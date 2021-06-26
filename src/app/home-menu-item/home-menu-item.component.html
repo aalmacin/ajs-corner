@@ -1,5 +1,11 @@
-<div class="menu-item">
-  <div class="menu-item__image"></div>
+<div
+  class="menu-item"
+  [class.menu-item-left]="!right"
+  [class.menu-item-right]="right"
+>
+  <div class="menu-item__image">
+    <img class="menu-item__image--img" src="{{ imgSrc }}" alt="" />
+  </div>
   <div class="menu-item__info">
     <div class="menu-item__info--flavorText">{{ flavorText }}</div>
     <h3 class="menu-item__info--heading">{{ heading }}</h3>

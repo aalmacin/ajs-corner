@@ -1,25 +1,31 @@
-<header class="main-header">
-  <div class="main-header__top">
-    <h1 class="main-header__logo">
-      <img alt="AJ's Menu" src="/assets/images/logo.png" />
-    </h1>
-    <nav class="main-header__nav">
-      <a href="/" class="main-header__nav--link">Home</a>
-      <a href="/menu" class="main-header__nav--link">Menu</a>
-    </nav>
-  </div>
-  <div class="main-header__contact">
-    <strong>Contact Us:</strong>
-    <a class="main-header__contact--number" href="tel:{{ number }}">{{
-      number
-    }}</a>
-  </div>
-</header>
-<main>
+<header>
   <div class="main-banner">
-    <div class="main-banner__bg"></div>
+    <div class="main-header">
+      <h1 class="main-header__logo">
+        <img
+          class="main-header__logo--img"
+          alt="AJ's Menu"
+          src="/assets/images/logo-white-text.svg"
+        />
+      </h1>
+      <div class="main-header__contact">
+        Contact Us:
+        <a class="main-header__contact--number" href="tel:{{ number }}">{{
+          number
+        }}</a>
+      </div>
+      <nav class="main-header__nav">
+        <a href="/" class="main-header__nav--link">Home</a>
+        <a href="/menu" class="main-header__nav--link">Menu</a>
+      </nav>
+    </div>
+    <img class="main-banner__bg" src="/assets/images/banner-image.png" />
     <div class="main-banner__info">
-      <h2 class="main-banner__info--heading">Delicious Asian Food</h2>
+      <h2 class="main-banner__info--heading">
+        <span class="main-banner__info--heading-delicious">Delicious</span>
+        Asian Food
+      </h2>
+      <div class="main-banner__info--white-line"></div>
       <div class="main-banner__info--parag">
         Authentic Filipino, Korean and Japanese food
       </div>
@@ -28,4 +34,5 @@
       >
     </div>
   </div>
-</main>
+</header>
+<main></main>

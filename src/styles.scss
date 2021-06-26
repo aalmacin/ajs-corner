@@ -104,10 +104,15 @@
 
 html {
   font-family: "Open Sans";
-  font-size: 2px;
+  font-size: 4px;
 
-  @media screen and (min-width: 1024px) {
-    font-size: 4px;
+  @media screen and (max-width: 1024px) {
+    font-size: 3px;
+  }
+
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    font-size: 2px;
   }
 }
 
